@@ -31,7 +31,7 @@
 
 | User Interface                                                                                                                         |
 | -------------------------------------------------------------------------------- 
-| ![Dashboard](images/dashbaord1.png/400x250?text=Node Red Dashboard) 
+| ![Dashboard](Images/dashbaord1.jpg/400x250?text=Node Red Dashboard) 
 
 ---
 
