@@ -25,8 +25,6 @@
 * Real-time **Temperature**, **Light Intensity**, and **Servo Parameters** display
 * Color-coded status indicators (Normal / Warning / Critical)
 * Auto-refreshing dashboard via MQTT
-* Dashboard images below:
-
 
 | User Interface |
 |----------------|
