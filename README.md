@@ -27,11 +27,10 @@
 * Auto-refreshing dashboard via MQTT
 * Dashboard images below:
 
-> Replace the links below with actual screenshots of your dashboard.
 
-| User Interface                                                                                                                         |
-| -------------------------------------------------------------------------------- 
-| ![Dashboard](Images/dashbaord1.jpg/400x250?text=Node Red Dashboard) 
+| User Interface |
+|----------------|
+| <img src="Images/dashboard1.jpg" alt="Dashboard" width="400" height="250"> |
 
 ---
 
