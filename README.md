@@ -52,12 +52,12 @@
 ### 1️⃣ Run Simulation on Wokwi
 
 * Open the *https://wokwi.com/*
-* Download the wokwi project and upload there.
+* Download the "Wokwi Project" and upload there.
 
 ### 2️⃣ Set Up Node-RED
 
 * Install Node-RED
-* Import the provided flow from `node-red-flow.json`
+* Import the provided flow from `Node Red Flow.json`
 * Deploy to go to the dahboard.
   
 ---
