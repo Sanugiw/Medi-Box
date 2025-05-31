@@ -1,68 +1,64 @@
-# 💊 MediBox – Smart Medicine Reminder System
+# 💊 Medibox - Smart Medicine Dispenser Simulation
 
-MediBox is an Arduino-based smart medicine reminder system that helps users manage their medication schedules with ease. It features alarm notifications, environmental tracking, and an intuitive OLED display interface. This project is built and tested using the **Wokwi Simulator** and supports integration with real-world hardware.
+**Medibox** is a smart medicine dispensing system built and simulated using the Wokwi platform. It monitors environmental conditions and medicine availability, automates a servo-controlled shade, and publishes data to a **Node-RED dashboard** via the **HiveMQ MQTT broker**.
 
----
-
-## 🚀 Features
-
-- ⏰ **Set Current Time**  
-  Set and update the current time using push buttons.
-
-- ⏳ **Set Two Alarms**  
-  Schedule up to two alarms to remind the user when it's time to take their medication.
-
-- ❌ **Remove Alarms**  
-  Easily clear any previously set alarm.
-
-- 🌡️ **Temperature and Humidity Monitoring**  
-  Uses a DHT22 sensor to monitor environmental conditions. Triggers an alert if values are out of a safe range.
-
-- 🔔 **Alarm Notification**  
-  Buzzer and LED alerts ensure the user doesn’t miss their medicine time.
+> 📦 **Status**: Simulated version using Wokwi and integrated with Node-RED via HiveMQ MQTT broker.
 
 ---
 
-## 📟 Core Functions
+## 🌟 Features
 
-- `void print_line(String message)`  
-  Prints a message line on the OLED display.
-
-- `void update_time()`  
-  Updates the system time using the `millis()` function.
-
-- `void print_time_now()`  
-  Displays current time in Days, Hours, Minutes, and Seconds on the OLED.
-
-- `void update_time_with_check_alarm()`  
-  Updates and displays time. Checks for any set alarms and triggers them if it's medicine time.
-
-- `void ring_alarm()`  
-  Activates the buzzer and LED, displaying an alert message on OLED.
-
-- `int wait_for_button_press()`  
-  Detects and returns the identifier of the pressed push button.
-
-- `void go_to_menu()`  
-  Navigates through different modes based on button press.
-
-- `void run_mode()`  
-  Executes the selected function/mode.
-
-- `void check_temp()`  
-  Monitors temperature and humidity using DHT22. Displays warnings and lights LED if needed.
+* 🌡️ **Temperature & Humidity Monitoring** via DHT11
+* 💡 **Light Intensity Detection** using LDR
+* 🚪 **Automated Servo-Controlled Shade** to protect medicine
+* 📤 **MQTT Data Publishing** via HiveMQ
+* 📊 **Interactive Node-RED Dashboard** for real-time monitoring
+* 🔔 **Alerts** on abnormal temperature, humidity, or light
+* 🧪 Fully simulated using **Wokwi Simulator**
 
 ---
 
-## 🛠️ Tools & Technologies
+## 🧠 Functional Overview
 
-| Tool | Purpose |
-|------|---------|
-| 🧪 Wokwi Simulator | Arduino + ESP32 simulation and testing |
-| 💡 Fritzing | Circuit design and documentation |
-| 🔧 EasyEDA | Circuit simulation and PCB design |
-| 🧠 Altium CircuitMaker | Professional PCB and schematic design |
-| 💻 Arduino IDE | Arduino programming |
-| 🌐 Node-RED | IoT integration and flow management |
-| 🖥️ VS Code | Coding in C++ with advanced IDE features |
+### 🖥️ Node-RED Dashboard
+
+* Real-time **Temperature**, **Light Intensity**, and **Servo Parameters** display
+* Color-coded status indicators (Normal / Warning / Critical)
+* Auto-refreshing dashboard via MQTT
+* Dashboard images below:
+
+> Replace the links below with actual screenshots of your dashboard.
+
+| User Interface                                                                                                                         |
+| -------------------------------------------------------------------------------- 
+| ![Dashboard](images/dashbaord1.png/400x250?text=Node Red Dashboard) 
+
+---
+
+## 🔧 Technologies Used
+
+* **Wokwi Simulator**
+* **ESP32**
+* **DHT22** Sensor
+* **LDR (Light Dependent Resistor)**
+* **Servo Motor**
+* **HiveMQ MQTT Broker**
+* **Node-RED**
+
+---
+
+## 🚀 Getting Started
+
+### 1️⃣ Run Simulation on Wokwi
+
+* Open the *https://wokwi.com/*
+* Download the wokwi project and upload there.
+
+### 2️⃣ Set Up Node-RED
+
+* Install Node-RED
+* Import the provided flow from `node-red-flow.json`
+* Deploy to go to the dahboard.
+  
+---
 
