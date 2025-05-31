@@ -30,7 +30,7 @@
 
 | User Interface |
 |----------------|
-| <img src="Images/dashboard1.jpg" alt="Dashboard" width="400" height="250"> |
+| ![Dashboard](Images/dashboard1.jpg) |
 
 ---
 
@@ -51,12 +51,12 @@
 ### 1️⃣ Run Simulation on Wokwi
 
 * Open the *https://wokwi.com/*
-* Download the "Wokwi Project" and upload there.
+* Download the `Wokwi Project` in Version 2 and upload there.
 
 ### 2️⃣ Set Up Node-RED
 
 * Install Node-RED
-* Import the provided flow from `Node Red Flow.json`
+* Import the provided flow from `Node Red Flow.json` in Version 2.
 * Deploy to go to the dahboard.
   
 ---
